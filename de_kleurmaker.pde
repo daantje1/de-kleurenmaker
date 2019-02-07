@@ -1,4 +1,4 @@
-float x = -50;
+float x = -1;
 //even geduld bij starten!
 
 void setup()
@@ -11,7 +11,7 @@ void draw()
 {
   ellipse(x, 50, 100, 100);
   x = x + 10;
-  if (x > 1999)
+  if (x > 1850)
   {
     x = -1000;
   }
@@ -19,11 +19,10 @@ void draw()
 
   ellipse(100, 100, 1000, 1000);
   x = x + 1;
-  if (x > 5000)
+  if (x > 1850)
   {
     x = -1000;
   }
-  if (mousePressed) {
     line(200, 150, 200, 250);
     line(200, 250, 300, 250);
     line(300, 250, 300, 150);
@@ -40,11 +39,7 @@ void draw()
     line(200, 250, 300, 250);
     line(300, 250, 300, 150);
     rect(100, 200, 300, 400);
-    fill(mouseX, mouseY, mouseX + mouseY);
-    ellipse(mouseX, mouseY, 500, 20);  
+    ellipse(mouseX, mouseY, 0.000000001, 0.000000001);  
     fill(mouseY, mouseX, 10);
-    ellipse(mouseX, mouseY, 50, 50);
-  } else {
 ellipse(300,200,100,100);
   }
-}
